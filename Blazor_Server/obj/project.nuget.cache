@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HSy3kYWBvjigO2RyFxoLV59sIynpom2cA5yQ4wjhnw4QRTaGokSoXDNhnAhhSWRd/hgWWc5UtgOyP151FYbTlg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akutsuki\\source\\repos\\Blazor_1_Server_CRUD\\Blazor_Server\\Blazor_Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akutsuki\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

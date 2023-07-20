@@ -1,0 +1,10 @@
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\bin\Debug\netcoreapp3.1\EmployeeManagement.Models.deps.json
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\bin\Debug\netcoreapp3.1\EmployeeManagement.Models.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\bin\Debug\netcoreapp3.1\EmployeeManagement.Models.pdb
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.csproj.AssemblyReference.cache
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.AssemblyInfoInputs.cache
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.AssemblyInfo.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\EmployeeManagement.Models\obj\Debug\netcoreapp3.1\EmployeeManagement.Models.pdb
