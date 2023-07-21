@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4QmgQEVPMNDffe4/peLEv0YSOaEIvxA+I/m+PYaO/gmvu6DJbQdt4b6QfNXfjkqjn+XLgbYQQ1XI64tqfzAsPQ==",
+  "dgSpecHash": "1uaqCea9RNTBEwbcLeHwGqSCoNnjFZMIksAyP9IDjSNcOCdM0KuJe121fgcn+AUY4p2/wNgdpgKFoaTkDsbDAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\akutsuki\\source\\repos\\Blazor_1_Server_CRUD\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

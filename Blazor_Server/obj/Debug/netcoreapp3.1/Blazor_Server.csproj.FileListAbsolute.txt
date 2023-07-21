@@ -44,3 +44,6 @@ C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netc
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Blazor_Server.dll
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Blazor_Server.pdb
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Blazor_Server.genruntimeconfig.cache
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EmployeeList.razor.g.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeList.razor.g.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
