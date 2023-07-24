@@ -15,7 +15,7 @@ namespace EmployeeManagement.Api.Repositories.R_Employee
 		private IDepartmentRepository departmentRepository;
 		public IConfiguration Configuration { get; }
 		public EmployeeRepository(IConfiguration _configuration,
-		                 	     IDepartmentRepository _departmentRepository)
+								  IDepartmentRepository _departmentRepository)
 		{
 			Configuration = _configuration;
 			departmentRepository = _departmentRepository;
@@ -210,6 +210,55 @@ namespace EmployeeManagement.Api.Repositories.R_Employee
 
 
 		}
+
+		public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
+		{
+			Employee employee = null;
+			List<Employee> listEmployees = new List<Employee>();
+			string cs = Configuration["ConnectionStrings:BlazorDBConnection"];
+			using (SqlConnection con = new SqlConnection(cs))
+			{
+				await con.OpenAsync();
+				SqlCommand cmd = new SqlCommand("sp_SearchEmployeeByName_Gender", con);
+				cmd.CommandType = CommandType.StoredProcedure;
+				cmd.Parameters.AddWithValue("@firstName", name);
+				cmd.Parameters.AddWithValue("@gender", gender);
+
+				SqlDataReader rdr = await cmd.ExecuteReaderAsync();
+
+				if (rdr.Read())
+				{
+					employee = new Employee();
+					employee.EmployeeId = Convert.ToInt32(rdr["EmployeeId"]);
+					employee.FirstName = rdr["FirstName"].ToString();
+					employee.LastName = rdr["LastName"].ToString();
+					employee.Email = rdr["Email"].ToString();
+					employee.DateOfBrith = Convert.ToDateTime(rdr["DateOfBirth"]);
+					char genderChar = Convert.ToChar(rdr["Gender"]);
+					if (Enum.TryParse<Gender>(genderChar.ToString(), out Gender gender_en))
+					{
+						if (gender_en == Gender.M)
+						{
+							employee.Gender = Gender.M;
+						}
+						else
+						{
+							employee.Gender = Gender.F;
+						}
+					}
+					employee.PhotoPath = rdr["PhotoPath"].ToString();
+					Department department = await departmentRepository.GetDepartment(employee.EmployeeId);
+					//employee.DepartmentName = department.DepartmentName;
+					employee.Department = department;
+					listEmployees.Add(employee);
+				}
+				listEmployees.Add(employee);
+
+			}
+
+			return listEmployees;
+		}
+
 
 
 	}

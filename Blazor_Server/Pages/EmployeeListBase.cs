@@ -4,19 +4,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EmployeeManagement.Models;
+using Blazor_Server.Services.Employee_S;
 
 namespace Blazor_Server.Pages
 {
 	public class EmployeeListBase : ComponentBase
 	{
+		[Inject]
+		public IEmployeeService EmployeeService { get; set; }
 		public IEnumerable<Employee> Employees { get; set; }
 
 		protected override async Task OnInitializedAsync()
 		{
-			await Task.Run(LoadEmployees);
+			Employees = (await EmployeeService.GetEmployees()).ToList();
+			//await Task.Run(LoadEmployees);
 		}
 
-		private void LoadEmployees()
+	/*	private void LoadEmployees()
 		{
 			System.Threading.Thread.Sleep(2000);
 			Employee e1 = new Employee
@@ -28,7 +32,7 @@ namespace Blazor_Server.Pages
 				DateOfBrith = new DateTime(1980, 10, 5),
 				Gender = Gender.M,
 				Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
-				PhotoPath = "images/john.png"
+				PhotoPath = "img/2.png"
 			};
 
 			Employee e2 = new Employee
@@ -40,7 +44,7 @@ namespace Blazor_Server.Pages
 				DateOfBrith = new DateTime(1981, 12, 22),
 				Gender = Gender.M,
 				Department = new Department { DepartmentId = 2, DepartmentName = "HR" },
-				PhotoPath = "images/sam.jpg"
+				PhotoPath = "img/3.jpg"
 			};
 
 			Employee e3 = new Employee
@@ -52,22 +56,22 @@ namespace Blazor_Server.Pages
 				DateOfBrith = new DateTime(1979, 11, 11),
 				Gender = Gender.F,
 				Department = new Department { DepartmentId = 1, DepartmentName = "IT" },
-				PhotoPath = "images/mary.png"
+				PhotoPath = "img/1.png"
 			};
 
 			Employee e4 = new Employee
 			{
-				EmployeeId = 3,
+				EmployeeId = 4,
 				FirstName = "Sara",
 				LastName = "Longway",
 				Email = "sara@pragimtech.com",
 				DateOfBrith = new DateTime(1982, 9, 23),
 				Gender = Gender.F,
 				Department = new Department { DepartmentId = 3, DepartmentName = "Payroll" },
-				PhotoPath = "images/sara.png"
+				PhotoPath = "img/4.png"
 			};
 
 			Employees = new List<Employee> { e1, e2, e3, e4 };
-		}
+		}*/
 	}
 }

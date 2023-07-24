@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "1F6T7bLQpCWfwRSSn70LpV/74NC5Vl8CuUC+IC6e6d9DbmYExEbhieEIS74ckahGMhH3t2/4B56bxubRNj4uBg==",
+  "dgSpecHash": "9/PRMbON21dGL8IFLbOKBvB+3QVbWwUp3siko23DiVHilhsYJsZCDYcxOsWfV6A1AJ9mpxHbtQLLNawtgOoEbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\akutsuki\\source\\repos\\Blazor_1_Server_CRUD\\Blazor_Server\\Blazor_Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\akutsuki\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\akutsuki\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512",
+    "C:\\Users\\akutsuki\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\akutsuki\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []

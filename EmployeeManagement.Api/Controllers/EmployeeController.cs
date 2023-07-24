@@ -15,6 +15,8 @@ namespace EmployeeManagement.Api.Controllers
 	{
 		private readonly IEmployeeRepository employeeRepository;
 
+		public object Configuration { get; private set; }
+
 		public EmployeeController(IEmployeeRepository employeeRepository)
 		{
 			this.employeeRepository = employeeRepository;
@@ -122,6 +124,27 @@ namespace EmployeeManagement.Api.Controllers
 					"Error deleting employee record");
 			}
 		}
+		[HttpGet("{search}")]
+		public async Task<ActionResult<IEnumerable<Employee>>> Search(string name, Gender? gender)
+		{
+			try
+			{
+				var result = await employeeRepository.Search(name, gender);
+
+				if (result.Any())
+				{
+					return Ok(result);
+				}
+
+				return NotFound();
+			}
+			catch (Exception)
+			{
+				return StatusCode(StatusCodes.Status500InternalServerError,
+				"Error retrieving data from the database");
+			}
+		}
+
 
 	}
 }
