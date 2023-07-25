@@ -1,3 +1,4 @@
+using Blazor_Server.Services.Department_S;
 using Blazor_Server.Services.Employee_S;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
@@ -28,6 +29,10 @@ namespace Blazor_Server
 			services.AddRazorPages();
 			services.AddServerSideBlazor();
 			services.AddHttpClient<IEmployeeService, EmployeeService>(client =>
+			{
+				client.BaseAddress = new Uri("http://localhost:42009/");
+			});
+			services.AddHttpClient<IDepartmentService, DepartmentService>(client =>
 			{
 				client.BaseAddress = new Uri("http://localhost:42009/");
 			});

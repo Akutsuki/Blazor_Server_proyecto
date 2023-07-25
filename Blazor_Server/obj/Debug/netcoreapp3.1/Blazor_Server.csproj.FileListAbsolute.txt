@@ -54,3 +54,5 @@ C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netc
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EmployeeDetails.razor.g.cs
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeDetails.razor.g.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EditEmployee.razor.g.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Razor\Pages\EditEmployee.razor.g.cs
