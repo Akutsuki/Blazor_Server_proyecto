@@ -1,9 +1,13 @@
-﻿using System;
+﻿using EmployeeManagement.Models;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace EmployeeManagement.Models
+namespace Blazor_Server.Models
 {
-	public class Employee
+	public class EditEmployeeModel
 	{
         public int EmployeeId { get; set; }
         [Required(ErrorMessage = "FirstName is mandatory")]
@@ -17,8 +21,8 @@ namespace EmployeeManagement.Models
         public Gender Gender { get; set; }
 
         public int DepartmentId { get; set; }
-        
-        public Department Department { get; set; }
+
+        public Department Department { get; set; } = new Department();
         public string PhotoPath { get; set; }
     }
 }

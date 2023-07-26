@@ -72,6 +72,13 @@ using Blazor_Server.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\_Imports.razor"
+using EmployeeManagement.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class EmployeeList : EmployeeListBase
     {

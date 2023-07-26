@@ -75,6 +75,13 @@ using Blazor_Server.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\_Imports.razor"
+using EmployeeManagement.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -83,11 +90,24 @@ using Blazor_Server.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\Shared\NavMenu.razor"
+#line 23 "C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 29 "C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\Shared\NavMenu.razor"
+
+    private void HandleClick()
+    {
+        NavigationManager.NavigateTo("editemployee", true);
+    }
 
     private void ToggleNavMenu()
     {
@@ -97,6 +117,7 @@ using Blazor_Server.Shared;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -54,7 +54,7 @@ namespace Blazor_Server.Services.Employee_S
 		public async Task<Employee> UpdateEmployee(Employee employee)
 		{
 			var response = await httpClient
-		   .PutAsJsonAsync<Employee>($"/api/employee/{employee.EmployeeId}", employee);
+		   .PutAsJsonAsync<Employee>($"/api/employee/", employee);
 			return await response.Content.ReadFromJsonAsync<Employee>();
 		}
 
