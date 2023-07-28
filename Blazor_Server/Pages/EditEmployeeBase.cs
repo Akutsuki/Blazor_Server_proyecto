@@ -2,6 +2,7 @@
 using Blazor_Server.Services.Department_S;
 using Blazor_Server.Services.Employee_S;
 using EmployeeManagement.Models;
+using ManagementComponents;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,9 @@ namespace Blazor_Server.Pages
         public NavigationManager NavigationManager { get; set; }
 
         public string PageHeader { get; set; }
+
+        protected ConfirmBase DeleteConfirmation { get; set; }
+
         protected async override Task OnInitializedAsync()
         {
      
@@ -85,10 +89,23 @@ namespace Blazor_Server.Pages
             }
         }
 
+
+
         protected async Task Delete_Click()
         {
             await EmployeeService.DeleteEmployee(Employee.EmployeeId);
             NavigationManager.NavigateTo("/");
+            // DeleteConfirmation.Show();
+        }
+
+        protected async Task ConfirmDelete_Click(bool deleteConfirmed)
+        {
+            if (deleteConfirmed)
+            {
+                await EmployeeService.DeleteEmployee(Employee.EmployeeId);
+                NavigationManager.NavigateTo("/");
+               // await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
+            }
         }
     }
 }

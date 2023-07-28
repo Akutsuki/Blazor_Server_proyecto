@@ -1,4 +1,5 @@
 ﻿@page "/"
+@page "/employeelist/{id}"
 @inherits EmployeeListBase
 
 <h3>EmployeeList</h3>
@@ -22,7 +23,10 @@ else
                     <a href="@($"editemployee/{employee.EmployeeId}")"
                        class="btn btn-primary m-1">Edit</a>
 
-                    <a href="#" class="btn btn-danger m-1">Delete</a>
+                    <button class="btn btn-danger" type="button">
+                        Delete
+                    </button>
+
                 </div>
             </div>
         }

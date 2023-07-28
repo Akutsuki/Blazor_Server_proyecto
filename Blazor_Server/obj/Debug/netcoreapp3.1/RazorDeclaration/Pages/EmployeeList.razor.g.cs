@@ -83,6 +83,7 @@ using EmployeeManagement.Models;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/employeelist/{id}")]
     public partial class EmployeeList : EmployeeListBase
     {
         #pragma warning disable 1998

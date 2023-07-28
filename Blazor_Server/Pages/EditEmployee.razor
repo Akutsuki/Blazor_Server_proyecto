@@ -1,5 +1,6 @@
 ﻿@page "/editemployee/{id}"
 @page "/editemployee/"
+
 @inherits EditEmployeeBase
 
 <EditForm Model="@Employee" OnValidSubmit="HandleValidSubmit">
@@ -78,3 +79,6 @@
         </button>
     }
 </EditForm>
+@*<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+         ConfirmationMessage=@($"Are you sure you want to delete \"{Employee.FirstName}\"")>
+</Confirm>*@

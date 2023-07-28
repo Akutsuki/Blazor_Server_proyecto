@@ -56,3 +56,17 @@ C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netc
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Razor\Pages\EmployeeDetails.razor.g.cs
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\EditEmployee.razor.g.cs
 C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\obj\Debug\netcoreapp3.1\Razor\Pages\EditEmployee.razor.g.cs
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Blazor_Server.StaticWebAssets.xml
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\ManagementComponents.dll
+C:\Users\akutsuki\source\repos\Blazor_1_Server_CRUD\Blazor_Server\bin\Debug\netcoreapp3.1\ManagementComponents.pdb
