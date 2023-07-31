@@ -98,14 +98,14 @@ namespace Blazor_Server.Pages
             // DeleteConfirmation.Show();
         }
 
-        protected async Task ConfirmDelete_Click(bool deleteConfirmed)
-        {
-            if (deleteConfirmed)
-            {
-                await EmployeeService.DeleteEmployee(Employee.EmployeeId);
-                NavigationManager.NavigateTo("/");
-               // await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
-            }
-        }
+        //protected async Task ConfirmDelete_Click(bool deleteConfirmed)
+        //{
+        //    if (deleteConfirmed)
+        //    {
+        //        await EmployeeService.DeleteEmployee(Employee.EmployeeId);
+        //        NavigationManager.NavigateTo("/");
+        //       // await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
+        //    }
+        //}
     }
 }

@@ -12,6 +12,8 @@ namespace Blazor_Server.Pages
 	{
 		[Inject]
 		public IEmployeeService EmployeeService { get; set; }
+		[Inject]
+		public NavigationManager NavigationManager { get; set; }
 		public IEnumerable<Employee> Employees { get; set; }
 		[Parameter]
 		public Employee Employee { get; set; }//= new Employee();
@@ -26,13 +28,13 @@ namespace Blazor_Server.Pages
 			//await Task.Run(LoadEmployees);
 		}
 
-		protected async Task Delete_Click()
+		protected async Task Delete_Click(int id)
 		{
 			int.TryParse(Id, out int employeeId);
 			//await EmployeeService.DeleteEmployee(Employee.EmployeeId);
-			await EmployeeService.DeleteEmployee(int.Parse(Id));
+			await EmployeeService.DeleteEmployee(id);
 			//await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
-			//NavigationManager.NavigateTo("/", true);
+			NavigationManager.NavigateTo("/",true);
 		}
 		//protected async Task EmployeeDeleted()
 		//{

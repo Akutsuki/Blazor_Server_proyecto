@@ -23,7 +23,7 @@ else
                     <a href="@($"editemployee/{employee.EmployeeId}")"
                        class="btn btn-primary m-1">Edit</a>
 
-                    <button class="btn btn-danger" type="button">
+                    <button class="btn btn-danger" type="button" @onclick="(async ()=> await  Delete_Click(employee.EmployeeId))">
                         Delete
                     </button>
 

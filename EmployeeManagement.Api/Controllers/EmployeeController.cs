@@ -145,6 +145,29 @@ namespace EmployeeManagement.Api.Controllers
 			}
 		}
 
+		/*[HttpPatch("{id:int}")]
+		public async Task<ActionResult<Employee>> PatchEmployee(Employee employee)
+		{
+			try
+			{
+				//if (id != employee.EmployeeId)
+				//	return BadRequest("Employee ID mismatch");
+
+				var employeeToUpdate = await employeeRepository.GetEmployee(employee.EmployeeId);
+
+				if (employeeToUpdate == null)
+				{
+					return NotFound($"Employee with Id = {employee.EmployeeId} not found");
+				}
+
+				return await employeeRepository.UpdateEmployee(employee);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(StatusCodes.Status500InternalServerError,
+					"Error updating employee record");
+			}
+		}*/
 
 	}
 }
