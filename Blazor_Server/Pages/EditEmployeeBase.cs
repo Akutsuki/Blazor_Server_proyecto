@@ -52,7 +52,7 @@ namespace Blazor_Server.Pages
                 PageHeader = "Create Employee";
                 Employee = new Employee
                 {
-                    DepartmentId = 1,
+                   // DepartmentId = 1,
                     DateOfBrith = DateTime.Now,
                     PhotoPath = "img/nophoto.jpg"
                 };
